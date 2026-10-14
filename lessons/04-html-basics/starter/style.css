@@ -1,0 +1,16 @@
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border-color:black;
+    background-color: brown;
+}
+h1{
+    font-size: 60px;
+    padding-right: 30px;
+}
+body{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: bisque;
+}
