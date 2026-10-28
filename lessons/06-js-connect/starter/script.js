@@ -17,7 +17,6 @@ function playA4() {
 // TODO: найди #playBtn и #status, по клику меняй текст и цвет
 // TODO: найди #toneBtn, по клику вызови playA4()
 
-// Пример:
-// const playBtn = document.querySelector("#playBtn");
-// const toneBtn = document.querySelector("#toneBtn");
-// const status = document.querySelector("#status");
+ const status = document.querySelector("#status");
+const playBtn = document.querySelector("#playBtn");
+const toneBtn = document.querySelector("#toneBtn");
