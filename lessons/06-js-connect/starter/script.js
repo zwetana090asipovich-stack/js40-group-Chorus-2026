@@ -17,6 +17,20 @@ function playA4() {
 // TODO: найди #playBtn и #status, по клику меняй текст и цвет
 // TODO: найди #toneBtn, по клику вызови playA4()
 
- const status = document.querySelector("#status");
+const text = document.querySelector("#status");
 const playBtn = document.querySelector("#playBtn");
 const toneBtn = document.querySelector("#toneBtn");
+let isPlaying = false
+
+console.log(playBtn)
+playBtn.addEventListener("click", () => { 
+isPlaying = !isPlaying
+if(isPlaying){
+  text.textContent = "Привет ,спасибо, что нажал!";
+  playBtn.style.color = "red"
+}
+})
+toneBtn.addEventListener("click",()=>{
+  playA4()
+  text.textContent = "Я играю ноту ля"
+})
