@@ -2,21 +2,29 @@
 // Задача: описать трек переменными и показать его на странице
 
 // Название трека(строка)
-let songTitle = "Лунная соната";
+let songTitle = "Лишь тень";
 
 //Исполнитель / композитор (строка)
-let artist = "Людвиг ван Бетховен";
+let artist = "Антоха МС";
 
 //Год (число)
-let year = 1801;
+let year = 2026;
 
 // Жанр
-const genre = "Классика";
+const genre = "Поп-музыка";
+
+//Длительность (число)
+const duration = "02:47";
+
 
 let cardText = `🎵 ${songTitle}
 Исполнитель: ${artist}
 Год: ${year}
-Жанр: ${genre}`;
+Жанр: ${genre}
+Длительность: ${duration}`;
+
+
+
 
 
 // TODO 4: по клику на кнопку запиши данные в элементы страницы
@@ -24,7 +32,7 @@ document.getElementById("show-btn").addEventListener("click", function () {
   document.getElementById("card-text").textContent = cardText;
 document.getElementById("title").textContent = songTitle;
 document.getElementById("artist").textContent = artist;
-
-
+document.getElementById("duration").textContent = duration;
 
 });
+
